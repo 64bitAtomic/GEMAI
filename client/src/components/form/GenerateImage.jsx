@@ -66,7 +66,7 @@ const GenerateImage = ({
       .then((res) => {
         setPost({
           ...post,
-          photo: `data:image/jpeg;base64,${res?.data?.photo}`,
+          photo: res?.data?.photo,
         });
         setGenerateImageLoading(false);
       })

@@ -1,33 +1,40 @@
 import * as dotenv from "dotenv";
 import { createError } from "../error.js";
-import { Configuration, OpenAIApi } from "openai";
 
 dotenv.config();
 
-// Setup open ai api key
-const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-const openai = new OpenAIApi(configuration);
+const url = "https://apiimagestrax.vercel.app/api/genimage";
 
 // Controller to generate Image
 export const generateImage = async (req, res, next) => {
   try {
     const { prompt } = req.body;
 
-    const response = await openai.createImage({
-      prompt,
-      n: 1,
-      size: "1024x1024",
-      response_format: "b64_json",
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ prompt }) // ✅ Correct body
     });
-    const generatedImage = response.data.data[0].b64_json;
-    res.status(200).json({ photo: generatedImage });
+
+    if (response.ok) {
+      const buffer = Buffer.from(await response.arrayBuffer());
+   // Convert to base64 data URL for response
+      const base64 = buffer.toString("base64");
+      const dataUrl = `data:image/png;base64,${base64}`;
+
+      res.status(200).json({ photo: dataUrl });
+    } else {
+      console.error(`Failed to generate image. Status code: ${response.status}`);
+      next(createError(response.status, "Failed to generate image"));
+    }
   } catch (error) {
+    console.log(error?.message || error);
     next(
       createError(
-        error.status,
-        error?.response?.data?.error.message || error.message
+        error.status || 500,
+        error?.response?.data?.error?.message || error.message
       )
     );
   }

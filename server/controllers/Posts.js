@@ -5,10 +5,14 @@ import { v2 as cloudinary } from "cloudinary";
 
 dotenv.config();
 
+let CLOUDINARY_CLOUD_NAME="dd10qgmft"
+let CLOUDINARY_API_KEY="142411339425452"
+let CLOUDINARY_API_SECRET="p1QlXZ0AUlDDs86zmAU3azxvlq4"
+
 cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
+  cloud_name: CLOUDINARY_CLOUD_NAME,
+  api_key: CLOUDINARY_API_KEY,
+  api_secret: CLOUDINARY_API_SECRET,
 });
 
 // Get all posts

@@ -7,6 +7,8 @@ import posts from "./routes/Posts.js";
 
 dotenv.config();
 
+let MONGODB_URL="mongodb://localhost:27017/HIPPOAI"
+
 const app = express();
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
@@ -35,7 +37,7 @@ app.get("/", async (req, res) => {
 const connectDB = () => {
   mongoose.set("strictQuery", true);
   mongoose
-    .connect(process.env.MONGODB_URL)
+    .connect(MONGODB_URL)
     .then(() => console.log("Connected to Mongo DB"))
     .catch((err) => {
       console.error("failed to connect with mongo");
