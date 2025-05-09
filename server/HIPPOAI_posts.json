@@ -36,29 +36,11 @@
 },
 {
   "_id": {
-    "$oid": "681cc2047fea0dfa3b4ee6d6"
-  },
-  "name": "Erogama",
-  "prompt": "3D model of lady with curly hair and Vikings look",
-  "photo": "https://assets.grok.com/users/30d4adae-09f1-41fb-8ba7-a6fef612c594/generated/0tFIk7qnehIOP3Oa/image.jpg",
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "681cee79ded583ee1ce64a07"
   },
   "name": "Zoro",
   "prompt": "An ancient floating castle tethered to a mountain by glowing chains, in a stormy twilight sky",
   "photo": "https://assets.grok.com/users/30d4adae-09f1-41fb-8ba7-a6fef612c594/generated/TlcsKCIIrOUiJ1PA/image.jpg",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "681cf0a1ded583ee1ce64a08"
-  },
-  "name": "HumanVoid",
-  "prompt": "Humanoid robots tending a garden on Mars with Earth in the distant sky",
-  "photo": "https://assets.grok.com/users/30d4adae-09f1-41fb-8ba7-a6fef612c594/generated/AVONSLzm8g8YSoIL/image.jpg",
   "__v": 0
 },
 {
@@ -95,5 +77,32 @@
   "name": "Aditya",
   "prompt": "A photorealistic depiction of Elsa, reimagined as a striking neon elemental, featuring iridescent ice-blue hair that glows with vibrant shades of violet and turquoise. Her gown is transformed into a breathtaking, flowing garment that shimmers like liquid ice, adorned with luminous symbols reflecting elemental magic. Set against a fantastical backdrop of a swirling aurora borealis illuminating a starry sky, the atmosphere is charged with a sense of mystical power and awe. The lighting is dramatic, with neon accents reflecting off the icy terrain, creating a surreal contrast between the cool colors and the dark night. This vivid scene is captured in a hyper-realistic style, emphasizing every detail from the swirling patterns in her gown to the enchanting glow of her elemental powers.",
   "photo": "https://img.weights.com/insecure/size:640:0/resizing_type:fill/sharpen:0.5/plain/https://generated-images.weights.com/cm1l6083r2q2911ut74czrsqn/cmadym9np0mrilv15wocn1kt4_lora_2_0.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681e228f7783228e6392004a"
+  },
+  "name": "Ichigo",
+  "prompt": "Generate anime characters in a modern anime style!Example prompt:anime girl, golden hair, blush, anime girl with a very red face in embarrassment, looking at viewer, waist-up shot, pink sparkle background, frilled white shirt, blunt bangs hair, collarbone lora:anime-screenshots:1For a legs up shot",
+  "photo": "https://img.weights.com/insecure/size:1920:0/resizing_type:fill/sharpen:0.5/plain/https://generated-images.weights.gg/cm3057k5i2umkoj0v43iw8rsi/lora_image_1.webp",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681e249a7783228e6392004b"
+  },
+  "name": "HumanVoid",
+  "prompt": "A hyperrealistic image of a 20-year-old man with short hair, looking focused, holding an avometer while fixing a faulty head of a home robot. Circuits and wires are visible through a hole in the robot's head. The location is in a robotics factory. Robots, their spare parts, and modern machinery are scattered throughout.",
+  "photo": "https://img.weights.com/insecure/size:1920:0/resizing_type:fill/sharpen:0.5/plain/https://generated-images.weights.com/cm4nqdaxi02c2m618iiytzv3c/cm9h8aiba1cn7nz15yto2bi5g_lora_2_0.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "681e254d7783228e6392004c"
+  },
+  "name": "Aditya",
+  "prompt": "Neon City",
+  "photo": "https://img.weights.com/insecure/size:1920:0/resizing_type:fill/sharpen:0.5/plain/https://generated-images.weights.gg/cm0lbv4tf13m1ddxtd3bz8jze/image_1.webp",
   "__v": 0
 }]
